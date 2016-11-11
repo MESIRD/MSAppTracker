@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0810"
+   LastUpgradeVersion = "0800"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F5235AE61DD58737008F4026"
+               BlueprintIdentifier = "D776E6571DD61B9D006A9212"
                BuildableName = "MSAppTracker.app"
                BlueprintName = "MSAppTracker"
                ReferencedContainer = "container:MSAppTracker.xcodeproj">
@@ -32,7 +32,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F5235AE61DD58737008F4026"
+            BlueprintIdentifier = "D776E6571DD61B9D006A9212"
             BuildableName = "MSAppTracker.app"
             BlueprintName = "MSAppTracker"
             ReferencedContainer = "container:MSAppTracker.xcodeproj">
@@ -55,7 +55,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F5235AE61DD58737008F4026"
+            BlueprintIdentifier = "D776E6571DD61B9D006A9212"
             BuildableName = "MSAppTracker.app"
             BlueprintName = "MSAppTracker"
             ReferencedContainer = "container:MSAppTracker.xcodeproj">
@@ -74,7 +74,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F5235AE61DD58737008F4026"
+            BlueprintIdentifier = "D776E6571DD61B9D006A9212"
             BuildableName = "MSAppTracker.app"
             BlueprintName = "MSAppTracker"
             ReferencedContainer = "container:MSAppTracker.xcodeproj">

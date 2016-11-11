@@ -1,67 +1,34 @@
 //
-//  ATMainWindow.m
+//  ViewController.m
 //  MSAppTracker
 //
-//  Created by xujie on 11/11/16.
+//  Created by mesird on 11/11/2016.
 //  Copyright © 2016 mesird. All rights reserved.
 //
 
-#import "ATMainWindow.h"
+#import "ViewController.h"
 
-@interface ATMainWindow ()
+@interface ViewController () <NSTableViewDelegate, NSTableViewDataSource>
+
+@property (weak) IBOutlet NSTableView *tableView;
 
 @property (strong) NSArray *runningApps;
 
 @end
 
-@implementation ATMainWindow
+@implementation ViewController
 
-+ (void)initialize {
-    
-    NSLog(@"init");
-}
+- (void)viewDidLoad {
+    [super viewDidLoad];
 
-+ (void)load {
-    
-    NSLog(@"load");
-}
-
-- (instancetype)init {
-    
-    if (self = [super init]) {
-        
-    }
-    return self;
-}
-
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    
-    NSLog(@"awake");
+    // Do any additional setup after loading the view.
     
     _runningApps = [NSArray array];
     
-    _tableView.delegate = self;
+    _tableView.delegate   = self;
     _tableView.dataSource = self;
     
     [self _fetchRunningApps];
-}
-
-- (NSWindow *)initWithWindowRef:(void *)windowRef {
-    
-    if (self = [super initWithWindowRef:windowRef]) {
-        NSLog(@"ref");
-    }
-    return self;
-}
-
-- (instancetype)initWithContentRect:(NSRect)contentRect styleMask:(NSWindowStyleMask)style backing:(NSBackingStoreType)bufferingType defer:(BOOL)flag {
-    
-    if (self = [super initWithContentRect:contentRect styleMask:style backing:bufferingType defer:flag]) {
-        
-        NSLog(@"content");
-    }
-    return self;
 }
 
 - (void)_fetchRunningApps {
@@ -107,5 +74,13 @@
     
     return view;
 }
+
+
+- (void)setRepresentedObject:(id)representedObject {
+    [super setRepresentedObject:representedObject];
+
+    // Update the view, if already loaded.
+}
+
 
 @end
